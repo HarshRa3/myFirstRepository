@@ -53,9 +53,9 @@
 }
 
 .block1_content input {
-    width: 90%;
+    width: 85%;
     height: 24px;
-    border-radius: 5px;
+    /* border-radius: 5px; */
 }
 
 .search,
@@ -65,9 +65,19 @@
 
 .search_icon {
     display: inline-block;
-    width: 8%;
+    width: 13%;
     text-align: center;
+    position: relative;
+    left: -2%;
+    height: 100%;
+    font-size: 17px;
+  padding: 0.5px 0px;
+  margin-top: 13px;
+    /* border-radius: 1px; */
 }
+/* .xyz{
+
+} */
 
 .search,
 .search_icon {
@@ -99,10 +109,11 @@
 }
 
 .footer {
-    margin: 10% 0;
+    margin: 4% 0;
 }
-@media(max-width:606px){
-    .block1_catagory{
+
+@media(max-width:606px) {
+    .block1_catagory {
         padding: 5% 4%;
     }
 }
