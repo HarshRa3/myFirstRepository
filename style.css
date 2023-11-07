@@ -1,4 +1,148 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    /* font-style: italic; */
+}
+.wraper{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+/* navbar css */
+.navbar {
+    width: 100vw;
+    background-color: black;
+}
+
+.logo {
+
+    display: inline-block;
+    position: relative;
+    top: 21px;
+    left: 5.8%;
+}
+
+.nav_list {
+    width: 60%;
+    padding: 1% 0;
+    position: relative;
+    left: 11.8%;
+    top: -13px;
+}
+
+.nav_list_item {
+    display: inline-block;
+}
+
+.nav_link {
+    text-decoration: none;
+    color: white;
+    padding-left: 28px;
+    font-size: 17px;
+}
+.sp1{
+    padding: 0;;
+}
+.hanburger {
+    color: white;
+    width: 36px;
+    display: none;
+}
+
+.hanburger2 {
+    color: white;
+    width: 36px;
+    display: none;
+}
+
+#check {
+    display: none;
+
+}
+
+.fa-solid {
+    cursor: pointer;
+}
+
+@media(max-width:623px) {
+    .logp {
+        background-color: red;
+        top: 1px;
+        left: 1px;
+    }
+}
+
+@media(max-width:916px) {
+    .hanburger {
+        display: block;
+        position: relative;
+        left: 90%;
+        height: 38px;
+        top: -17px;
+    }
+
+    .hanburger2 {
+        /* display: none; */
+        position: relative;
+        z-index: 2;
+        left: 90%;
+        height: 38px;
+        top: -18px;
+        font-size: 23px;
+    }
+
+    .hanburger:hover {
+        font-size: 20px;
+        /* cursor:pointer; */
+        
+        transition: all .2s ease-out;
+    }
+
+    .hanburger2:hover {
+        font-size: 20px;
+        transition: all .2s ease-out;
+    }
+
+    .nav_list_item {
+        display: block;
+        padding: 18px;
+    }
+
+    .nav_list {
+        display: none;
+        margin: 0;
+        position: relative;
+        bottom: 3.4rem;
+    }
+
+    #check:checked~.nav_list {
+        display: block;
+        /* transition: all 2s ease-in; */
+    }
+
+    #check:checked~.hanburger {
+        display: none;
+    }
+
+    #check:checked~.hanburger2 {
+        display: block;
+        position: relative;
+        /* top: 0px; */
+    
+    }
+
+}
+
+@media(max-width:1300px) {
+    .logo {
+        top: 20px;
+        left: 38px;
+    }
+
+    .nav_list {
+        top: -11px;
+        left: 145px;
+    }
 }
