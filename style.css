@@ -5,8 +5,8 @@
     /* font-style: italic; */
 }
 .wraper{
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     overflow-x: hidden;
 }
 
@@ -119,6 +119,7 @@
 
     #check:checked~.nav_list {
         display: block;
+        /* transition: all 2s ease-in; */
     }
 
     #check:checked~.hanburger {

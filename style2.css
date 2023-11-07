@@ -2,62 +2,64 @@
     padding: 0 7.6%;
 }
 
-.section1,
-.section2 {
+.main_section1,
+.main_section2 {
     display: inline-block;
 }
 
-.section1 {
+/* ===================================================section 1 css======================================== */
+
+.main_section1 {
     width: 69.3%;
-    /* margin-left: 1%; */
-    /* display: inline-block; */
 }
 
-.b_img {
+/* margin in section 1 */
+.m {
+    margin: 2% 0 0 0;
+}
+
+.blog_image {
     width: 100%;
 }
 
-.ref_h {
+.blog_reference {
     color: #7391ca;
 }
 
-.section2 {
+.main_section2 {
     width: 29%;
     /* display: inline-block; */
     margin-top: 1%;
     float: right;
 }
 
-.m {
-    margin: 2% 0 0 0;
-}
-
-.hr_col {
+.hr {
     color: #100b0b14;
 }
 
-.p_t_m {
+.para {
     margin: 3% 0;
 }
-.inner_s_c {
+
+.section2_block1 {
+    background-color: #eee;
+    padding: 3% 0px;
+    border-radius: 10px;
+}
+
+.block1_content {
     width: 89%;
     margin: auto;
 }
 
-.inner_s_c input {
+.block1_content input {
     width: 90%;
     height: 24px;
     border-radius: 5px;
 }
 
-.inner_s {
-    background-color: #d5d5d5;
-    padding: 3% 0px;
-    border-radius: 10px;
-}
-
 .search,
-.b_h {
+.block1_heading {
     margin: 5px 0;
 }
 
@@ -66,46 +68,67 @@
     width: 8%;
     text-align: center;
 }
-.search,.search_icon{
+
+.search,
+.search_icon {
     border: 2px solid gray;
     background-color: white;
 }
-.catagory_s{
+
+.block1_catagory {
     display: inline-block;
     margin: 2% 4%;
     color: #4badf1;
 }
-.catagory_ss{
-    background-color:#eee;
+
+.section2_block_2_3 {
+    background-color: #eee;
     margin: 8% 0%;
     border-radius: 9px;
 }
-.cat_con{
+
+.block1_catagory_container {
     padding: 9% 0;
 }
+
 /* #cat1{
     margin: 10% 10%;
 } */
-.cat1_m{
+.cat1_m {
     margin: 0% 8%;
 }
-@media(max-width:907px){
-    .section1{
+
+.footer {
+    margin: 10% 0;
+}
+@media(max-width:606px){
+    .block1_catagory{
+        padding: 5% 4%;
+    }
+}
+
+@media(max-width:995px) {
+    .main_section1 {
         width: 100%;
         /* margin: 10%; */
     }
-    .section2{
+
+    .main_section2 {
         float: none;
         display: block;
         width: 100%;
     }
-    .main{
+
+    .main {
         width: 100%;
     }
-    .section{
+
+    .section {
         width: 100%;
     }
-    .catagory_s{
+
+    .block1_catagory {
         padding: 1% 11%;
+        /* margin: 2% 2%; */
     }
 }
